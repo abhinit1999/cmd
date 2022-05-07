@@ -1,0 +1,32 @@
+li
+{
+    list-style: none;
+}
+.navBar
+{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    column-gap: 10px;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 12px;
+    background-color: rgb(48, 44, 44);
+    color: white;
+}
+.navBar li:hover
+{
+    cursor: pointer;
+    color: rgb(168, 115, 115);
+}
+
+/* Responsive Design; */
+
+@media(max-width:768px)
+{
+    .navBar
+    {
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+     font-size: 7px;  
+    }
+}
